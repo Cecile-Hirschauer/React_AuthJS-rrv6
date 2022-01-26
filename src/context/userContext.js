@@ -9,7 +9,7 @@ import { auth } from "../firebase-config";
 export const UserContext = createContext();
 
 export function UserContextProvider(props) {
-    
+
   // firebase
   const [currentUser, setCurrentUser] = useState();
   const [loadingData, setLoadingData] = useState(true);
@@ -19,7 +19,7 @@ export function UserContextProvider(props) {
 
   // modal
   const [modalState, setModalState] = useState({
-    signUpModal: false,
+    signUpModal: true,
     signInModal: false,
   });
 
