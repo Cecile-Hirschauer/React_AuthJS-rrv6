@@ -19,18 +19,18 @@ export function UserContextProvider(props) {
 
   // modal
   const [modalState, setModalState] = useState({
-    signUpModal: true,
+    signUpModal: false,
     signInModal: false,
   });
 
   const toggleModals = (modal) => {
-    if (modal === "signin") {
+    if (modal === "signIn") {
       setModalState({
         signUpModal: false,
         signInModal: true,
       });
     }
-    if (modal === "signup") {
+    if (modal === "signUp") {
       setModalState({
         signUpModal: true,
         signInModal: false,
