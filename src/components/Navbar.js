@@ -35,7 +35,7 @@ const Navbar = () => {
           Sign Up
         </button>
         <button
-          onClick={() => toggleModals("signin")}
+          onClick={() => toggleModals("signIn")}
           className="btn btn-primary ms-2"
         >
           Sign In

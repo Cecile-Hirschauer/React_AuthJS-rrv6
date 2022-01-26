@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 import SignUpModal from "./components/SignUpModal";
+import SignInModal from "./components/SignInModal";
 import PrivateHome from "./pages/Private/PrivateHome/PrivateHome";
 import Private from "./pages/Private/Private"
 
@@ -10,6 +11,7 @@ function App() {
   return (
     <>
       <SignUpModal />
+      <SignInModal />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
